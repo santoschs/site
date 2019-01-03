@@ -1,0 +1,92 @@
+body{
+	.bold{
+		font-weight: bold !important;
+	}
+	.thin{
+		font-weight: 100 !important;	
+	}
+	.f_200{
+		font-weight: 200 !important;	
+	}
+	.f_400{
+		font-weight: 400 !important;	
+	}
+	.f_500{
+		font-weight: 500 !important;	
+	}
+	.f_600{
+		font-weight: 600 !important;	
+	}
+	.f_700{
+		font-weight: 700 !important;	
+	}
+	.f_800{
+		font-weight: 800 !important;	
+	}
+	.f_900{
+		font-weight: 900 !important;	
+	}
+	.f_bold{
+		font-weight: bold !important;		
+	}
+	@for $i from 1 through 30 {
+		.mt-#{$i} {
+			margin-top: #{$i}rem !important;
+		}
+		.my-#{$i} {
+			margin-top: #{$i}rem !important;
+			margin-bottom: #{$i}rem !important;
+		}
+		.mx-#{$i} {
+			margin-left: #{$i}rem !important;
+			margin-right: #{$i}rem !important;
+		}
+		.ml-#{$i} {
+			margin-left: #{$i}rem !important;
+		}
+		.mr-#{$i} {
+			margin-right: #{$i}rem !important;
+		}
+		.mb-#{$i} {
+			margin-bottom: #{$i}rem !important;
+		}
+		.pt-#{$i} {
+			padding-top: #{$i}rem !important;
+		}
+		.py-#{$i} {
+			padding-top: #{$i}rem !important;
+			padding-bottom: #{$i}rem !important;
+		}
+		.px-#{$i} {
+			padding-left: #{$i}rem !important;
+			padding-right: #{$i}rem !important;
+		}
+		.pl-#{$i} {
+			padding-left: #{$i}rem !important;
+		}
+		.pb-#{$i} {
+			padding-bottom: #{$i}rem !important;
+		}
+		.pr-#{$i} {
+			padding-right: #{$i}rem !important;
+		}
+		.p-#{$i} {
+			padding: #{$i}rem !important;
+		}
+		.z-index-#{$i} {
+			z-index: #{$i} !important;
+		}
+	} 
+	main {
+		flex: 1 0 auto;
+	}
+	.capitalize{
+		text-transform: capitalize !important;
+	}
+	.uppercase{
+		text-transform: uppercase !important;
+	}
+	.italic{
+		font-style: italic;
+	}
+}
