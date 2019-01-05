@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Nunito);@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,600i,700,700i,800);@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,600i,700,700i,800);@charset "UTF-8";
 /*!
  * Bootstrap v4.2.1 (https://getbootstrap.com/)
  * Copyright 2011-2018 The Bootstrap Authors
@@ -11009,4 +11009,121 @@ body .italic {
 
 body {
   font-family: "Open Sans", sans-serif;
+  color: #5a5a5a;
+}
+body h1 {
+  font-size: 2.9rem;
+}
+body div.corte-imagem {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+}
+body div.corte-imagem img {
+  width: 100%;
+  top: -20px;
+  position: relative;
+  z-index: 1;
+}
+body div.corte-imagem:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: white;
+  opacity: 0.185;
+  z-index: 2;
+}
+
+main section#sobre_mim {
+  background-image: url("/public/img/bg_1.jpg");
+}
+
+header {
+  color: white !important;
+  min-height: 100vh;
+  font-size: 1rem !important;
+}
+header img.logo {
+  margin-top: 5rem;
+  width: 300px;
+}
+header img.triangle-right {
+  width: 820px;
+  position: absolute;
+  left: 50%;
+  top: -59%;
+}
+header nav {
+  background-color: #ffffff00 !important;
+  padding: 1rem !important;
+  font-size: 1rem;
+}
+header nav a {
+  color: white;
+  transition: all 0.5s ease;
+}
+
+body {
+  background: #2c2c2c;
+  /* Old browsers */
+}
+body footer {
+  position: relative;
+  padding: 1rem;
+  padding-top: 5rem !important;
+  color: white;
+  overflow: hidden;
+}
+body footer img.losangle-right-footer {
+  position: absolute;
+  bottom: -90%;
+  width: 70rem;
+  right: -22%;
+  z-index: -2;
+}
+body footer #copyright {
+  font-size: 0.7rem !important;
+  margin-top: 1rem;
+  border-top: 1px solid #4242425e;
+  padding-top: 1rem;
+  color: #6f6f6f;
+}
+body footer .form-control {
+  font-size: 1rem !important;
+  padding: 0.99rem !important;
+  font-weight: 500 !important;
+  height: 100% !important;
+  border-radius: 14px !important;
+  border: none !important;
+  padding-left: 1rem !important;
+  background: #1a1a1a !important;
+  color: #ababab !important;
+  box-shadow: inset black 0px 0px 14px -3px;
+  transition: all 0.5s ease;
+}
+body footer .form-control:focus {
+  color: #495057;
+  border-color: #a1cbef;
+  outline: 0;
+  box-shadow: 0 0 32px -8px rgba(255, 255, 255, 0.25) !important;
+}
+body footer textarea {
+  min-height: 12rem;
+}
+body footer .btn {
+  color: white;
+  border: white 1px solid;
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 11px;
+  transition: all 0.99s cubic-bezier(0.28, 0.92, 0.42, 1);
+}
+body footer .btn:hover {
+  background: white;
+  color: gray;
 }

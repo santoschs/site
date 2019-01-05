@@ -1,0 +1,36 @@
+header
+{
+	color: white !important;
+	min-height:100vh;
+	font-size: 1rem !important; 
+	img
+	{	
+		&.logo
+		{	
+			margin-top: 5rem;
+			width: 300px;
+		}
+		&.triangle-right
+		{
+			width: 820px;
+			position: absolute;
+			left: 50%;
+			top: -59%;
+		}
+	}
+	nav
+	{
+		background-color:#ffffff00 !important;
+		padding: 1rem !important;
+		font-size: 1rem;
+		a
+		{
+			color: white;
+			-webkit-transition: all .5s ease;
+			-moz-transition: all .5s ease;
+			-ms-transition: all .5s ease;
+			-o-transition: all .5s ease;
+			transition: all .5s ease;
+		}
+	}
+}
