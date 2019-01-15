@@ -8,16 +8,23 @@ class ProjetosController extends Controller
 {
 	public function index()
 	{
-		$arrayRemessa = array_map('pathinfo', \File::files('json/projetos'));
-		$projetos = array_pluck($arrayRemessa, 'basename');
+		// $arrayRemessa = array_map('pathinfo', \File::files('json/projetos'));
+		// $projetos = array_pluck($arrayRemessa, 'basename');
 
+		// recebe todas as informações
 		$content_all = array();
-		foreach ($projetos as $content) {
-			$json_file = file_get_contents("json/projetos/".$content);
-			$array = json_decode($json_file, true);
-			array_push($content_all, $array);
-		}
 
-		return view("projetos.listar", compact("content_all"));
+		$f_projetos = file_get_contents("json/projetos.json");
+		$j_projetos = json_decode($f_projetos, true);
+
+		$content_all['projetos'] = $j_projetos;
+
+		$f_institucional = file_get_contents("json/institucional.json");
+		$j_institucional = json_decode($f_institucional, true);
+		
+		$content_all['institucional'] = $j_institucional;
+
+		return view("welcome", compact("content_all"));
+
 	}
 }

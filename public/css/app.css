@@ -11007,6 +11007,27 @@ body .italic {
   font-style: italic;
 }
 
+* {
+  /* width */
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+*::-webkit-scrollbar {
+  width: 7px;
+}
+*::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #8080805c;
+  border-radius: 0px;
+}
+*::-webkit-scrollbar-thumb {
+  background: #2d2d2d;
+  border-radius: 10px;
+}
+*::-webkit-scrollbar-thumb:hover {
+  background: #2d2d2d;
+}
+
 body {
   font-family: "Open Sans", sans-serif !important;
   background: #f5f5f5;
@@ -11043,6 +11064,8 @@ body header .losangle {
   box-shadow: 10px 20px 47px 5px #0000003d;
   left: -20rem;
   transition: all 0.9s cubic-bezier(0.4, 0, 1, 1);
+  will-change: transform;
+  will-change: contents;
   z-index: 0;
   background: #f5f5f569;
 }
@@ -11186,6 +11209,8 @@ body main #about .losangle {
   box-shadow: 10px 20px 47px 5px #0000003d;
   left: -20rem;
   transition: all 0.9s cubic-bezier(0.4, 0, 1, 1);
+  will-change: transform;
+  will-change: contents;
 }
 body main #about .losangle:nth-child(2) {
   z-index: -1;
@@ -11199,6 +11224,8 @@ body main #about .losangle:nth-child(2) {
   box-shadow: 10px 20px 47px 5px #0000003d;
   left: -20rem;
   transition: all 0.9s cubic-bezier(0.4, 0, 1, 1);
+  will-change: transform;
+  will-change: contents;
   left: auto;
   right: -7rem;
   top: -14rem;
@@ -11229,9 +11256,13 @@ body main .btn {
   box-shadow: 20px 7px 57px -21px black;
   transition: all 0.5s cubic-bezier(0.25, 0.81, 0.35, 0.87);
   font-size: 1.5rem;
+  position: relative;
+  -webkit-perspective: 100vw;
+  perspective: 100vw;
+  overflow: hidden;
 }
 body main .btn:hover {
-  background: #848282;
+  background: #66a9bf;
   color: white;
 }
 body main .btn:focus, body main .btn.focus {
@@ -11246,9 +11277,16 @@ body main .project {
   min-height: 23rem;
   padding: 2rem;
   color: white !important;
-  padding-top: 13rem;
+  padding-top: 11rem;
   transition: all 0.5s ease-out;
   box-shadow: 0px 15px 50px -4px black;
+  will-change: contents;
+  will-change: transition;
+  max-height: 358px !important;
+  transition: all 0.5s ease-out;
+  box-shadow: 0px 15px 50px -4px black;
+  will-change: contents;
+  will-change: transition;
 }
 body main .project .project-figure {
   position: absolute;
@@ -11306,6 +11344,8 @@ body footer .losangle {
   box-shadow: 10px 20px 47px 5px #0000003d;
   left: -20rem;
   transition: all 0.9s cubic-bezier(0.4, 0, 1, 1);
+  will-change: transform;
+  will-change: contents;
   z-index: 1;
   width: 80vh;
   height: 80vh;

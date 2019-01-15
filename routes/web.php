@@ -11,7 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-Route::get('/projetos', 'ProjetosController@index');
+// Route::get('/', function () {
+// 	return view('welcome');
+// });
+
+Route::get('/', 'ProjetosController@index');
