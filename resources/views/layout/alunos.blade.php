@@ -11,12 +11,12 @@
 	<link rel="stylesheet" type="text/css" href="{{URL::to('/')}}/css/app.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 </head>
-<body class="projeto">
+<body class="aluno">
 	<header>
 		@include('layout.navbar')
-		<div class="img_background_project">
+		{{-- <div class="img_background_project">
 			<img src="{{URL::to('/')}}/img/projetos/{{$content_all['projeto']['img']}}">
-		</div>
+		</div> --}}
 		<div class="container">
 			<div class="losangle"></div>
 			<div class="losangle"></div>

@@ -21,12 +21,15 @@
 			<div class="losangle"></div>
 			<div class="losangle"></div>
 			<h1>{{$content_all['projeto']['nome']}}</h1>
-			<div class="col-md-8 m-auto text-center">
+			<div class="col-md-10 m-auto text-center">
 				<h2>{{$content_all['projeto']['descricao_curta']}}</h2>
 			</div>
 		</div>
 	</header>
 	<main>
+		<div class="losangle"></div>
+		<div class="losangle"></div>
+		<div class="losangle"></div>
 		@if (!empty($content_all['projeto']['resumo']))
 		<section class="resumo">
 			<div class="container">
@@ -66,15 +69,25 @@
 				
 			</div>	
 		</section>
+
+		@endif
+		@if (!empty($content_all['projeto']['more']))
+		<section class="mais my-10">
+			<div class="container">
+				@php
+					echo $content_all['projeto']['more'];
+				@endphp
+			</div>	
+		</section>
 		@endif
 
-		<div class="losangle"></div>
-		<div class="losangle"></div>
 	</main>	
 	<footer>
 		@include('layout.footer')
 	</footer>
-	<script type="text/javascript" src="{{URL::to('/')}}/js/app.js"></script>
-	<script type="text/javascript" src="{{URL::to('/')}}/js/main.js"></script>
+	
+	<script src="{{URL::to('/')}}/js/app.js"></script>
+	<script src="{{URL::to('/')}}/js/lodash.js"></script>
+	<script src="{{URL::to('/')}}/js/main.js"></script>
 </body>
 </html>

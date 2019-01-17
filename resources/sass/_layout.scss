@@ -23,8 +23,10 @@
 	}
 }
 body{
-	@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,600i,700,700i,800');
-	font-family: 'Open Sans', sans-serif !important;
+	// @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,600i,700,700i,800');
+	@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900');
+	// font-family: 'Open Sans', sans-serif !important;
+	font-family: 'Lato', sans-serif;
 	background:#f5f5f5;
 	$url: "http://localhost/carlos_santos/public/";
 	$gray_tone:#2d2d2d;
@@ -284,7 +286,11 @@ body{
 
 
 		//projetos ===
-
+		a{
+			&:hover{
+				text-decoration: none;
+			}
+		}
 		.project{
 			width: 100%;
 			overflow: hidden;
@@ -380,23 +386,36 @@ body{
 			margin: auto;
 		}
 	}
-
+	p{
+		&:first-letter{
+			text-transform:capitalize !important;
+		}
+	}
 	&.projeto{
 		header{
 			position: relative;
 			background:#ffffffb5 !important;
+			// background:#000000cf !important;
+			.losangle{
+				// background: #0a52509c !important;
+			}
+			// h1,h2{
+			// 	color: white !important;
+			// }
 			h1 {
 				text-transform: uppercase;
-				font-size: 6rem !important;
-				font-weight: 600;
-				margin-bottom: 1rem;
-				margin-top: 4rem;
-				color: #383838;
+				font-size: 7rem !important;
+				font-weight: 900;
+				margin-bottom: 2rem;
+				letter-spacing: 4rem;
+				margin-top: 2rem;
+				color: #2d2d2d;
 				text-shadow: 30px 37px 54px #0000007a;
-
 			}
 			h2{
-				line-height: 1.6 !important;
+				font-weight: 300;
+				line-height: 1.2 !important;
+				font-size:2rem;
 			}
 			.img_background_project{
 				width: 100%;
@@ -412,7 +431,51 @@ body{
 				}
 			}
 		}
+		main{
+			.losangle{
+				@include losangos;
+				&:nth-child(1){
+					left: auto;
+					right: -20rem;	
+				}
+				&:nth-child(2){
+					left: 0rem;
+					width: 120vh;
+					height: 120vh;
+					top: 7rem;
+				}
+				&:nth-child(3){
+					left: auto;
+					width: 60vh;
+					height: 60vh;
+					top: 47rem;
+					right: -10rem;
+					background: #232323;
+				}
+			}
+		}
 		section{
+			.title{
+				margin-top: 15rem;
+				
+				&:first-letter{
+					text-transform:capitalize;
+				}
+			}
+			&.mais{
+				.row{
+					margin-top: 5rem;
+					margin-bottom: 5rem;
+				}
+				p{
+					margin-top: 3rem;
+					font-size: 2rem !important;
+					font-weight: 300 !important;
+				}
+				img{
+					max-width:100% !important;
+				}
+			}
 			h1{
 				font-size: 3rem;
 				font-weight: 600;
@@ -439,10 +502,10 @@ body{
 						top: 0;
 						position:absolute;
 						-webkit-transition: all .5s ease;
-						   -moz-transition: all .5s ease;
-						    -ms-transition: all .5s ease;
-						     -o-transition: all .5s ease;
-						        transition: all .5s ease;
+						-moz-transition: all .5s ease;
+						-ms-transition: all .5s ease;
+						-o-transition: all .5s ease;
+						transition: all .5s ease;
 					}
 				}
 				h1, h2, a.link {
