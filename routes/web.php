@@ -16,3 +16,5 @@
 // });
 
 Route::get('/', 'ProjetosController@index');
+Route::get('/project/{id}', 'ProjetosController@show');
+Route::get('/pupil/{id}', 'ProjetosController@show_pupil');

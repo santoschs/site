@@ -11078,10 +11078,14 @@ body header .losangle:nth-child(2) {
   height: 70vh;
   top: 0rem;
 }
-body header img.logo {
+body header img.logo, body header img.escrito {
   width: 10rem;
   height: 100%;
   margin: auto;
+}
+body header img.escrito {
+  width: 27rem;
+  margin-top: 3rem;
 }
 body nav {
   padding: 1rem !important;
@@ -11355,4 +11359,117 @@ body footer .losangle {
 body footer .copyright {
   background: #131313;
   padding: 1rem;
+}
+body footer .img-fluid {
+  width: 100% !important;
+  height: 100% !important;
+}
+body footer .logo {
+  width: 7rem !important;
+  margin: auto;
+}
+body footer .escrito {
+  width: 18rem !important;
+  margin: auto;
+}
+body.projeto header {
+  position: relative;
+  background: #ffffffb5 !important;
+}
+body.projeto header h1 {
+  text-transform: uppercase;
+  font-size: 6rem !important;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  margin-top: 4rem;
+  color: #383838;
+  text-shadow: 30px 37px 54px #0000007a;
+}
+body.projeto header h2 {
+  line-height: 1.6 !important;
+}
+body.projeto header .img_background_project {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  max-height: 100vh;
+  z-index: -1;
+  overflow: hidden;
+}
+body.projeto header .img_background_project img {
+  width: 100%;
+  margin: auto;
+}
+body.projeto section h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  text-shadow: 10px 17px 20px #00000036;
+}
+body.projeto section .lead {
+  font-size: 1.6rem !important;
+}
+body.projeto section .aluno .img-aluno {
+  border-radius: 50%;
+  box-shadow: 10px 17px 20px #00000036;
+  overflow: hidden;
+  min-height: 15rem;
+  width: 15rem;
+  text-align: center;
+  position: relative;
+  background: black;
+  margin: auto;
+}
+body.projeto section .aluno .img-aluno img {
+  opacity: 0.5;
+  height: 150%;
+  left: 0;
+  top: 0;
+  position: absolute;
+  transition: all 0.5s ease;
+}
+body.projeto section .aluno h1, body.projeto section .aluno h2, body.projeto section .aluno a.link {
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-shadow: 10px 17px 20px #00000036;
+  text-align: center;
+  margin-top: 1rem;
+  position: absolute;
+  left: 0;
+  color: white;
+  top: 37%;
+  width: 100%;
+  text-align: center;
+  left: 0%;
+  font-weight: 200;
+  text-transform: uppercase;
+  transition: all 0.5s ease;
+}
+body.projeto section .aluno h2 {
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  top: 56%;
+}
+body.projeto section .aluno a.link {
+  font-size: 1rem;
+  top: 76%;
+  opacity: 0;
+}
+body.projeto section .aluno:hover img {
+  opacity: 0.2;
+}
+body.projeto section .aluno:hover a.link {
+  font-size: 1.3rem;
+  top: 38%;
+  opacity: 1;
+  text-decoration: none;
+}
+body.projeto section .aluno:hover h1 {
+  top: 12%;
+  font-size: 0.6rem;
+}
+body.projeto section .aluno:hover h2 {
+  text-transform: uppercase;
+  font-size: 0.5rem;
+  top: 5%;
 }

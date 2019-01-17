@@ -86,11 +86,16 @@ body{
 		}
 		img
 		{
-			&.logo
+			&.logo, &.escrito
 			{
 				width: 10rem;
 				height: 100%;
 				margin:auto;
+			}
+			&.escrito
+			{
+				width: 27rem;
+				margin-top: 3rem;
 			}
 		}
 	}
@@ -362,6 +367,138 @@ body{
 			background: #131313;
 			padding:1rem;
 		}
+		.img-fluid{
+			width: 100% !important;
+			height: 100% !important;
+		}
+		.logo{
+			width: 7rem !important;
+			margin: auto;
+		}
+		.escrito{
+			width: 18rem !important;	
+			margin: auto;
+		}
+	}
+
+	&.projeto{
+		header{
+			position: relative;
+			background:#ffffffb5 !important;
+			h1 {
+				text-transform: uppercase;
+				font-size: 6rem !important;
+				font-weight: 600;
+				margin-bottom: 1rem;
+				margin-top: 4rem;
+				color: #383838;
+				text-shadow: 30px 37px 54px #0000007a;
+
+			}
+			h2{
+				line-height: 1.6 !important;
+			}
+			.img_background_project{
+				width: 100%;
+				position:absolute;
+				left: 0;
+				top: 0;
+				max-height: 100vh;
+				z-index: -1;
+				overflow: hidden;
+				img{
+					width: 100%;
+					margin:auto;
+				}
+			}
+		}
+		section{
+			h1{
+				font-size: 3rem;
+				font-weight: 600;
+				text-shadow: 10px 17px 20px #00000036;
+			}
+			.lead{
+				font-size: 1.6rem !important;
+			}
+			.aluno{
+				.img-aluno{
+					border-radius: 50%;
+					box-shadow: 10px 17px 20px #00000036;
+					overflow: hidden;
+					min-height: 15rem;
+					width: 15rem;
+					text-align: center;
+					position: relative;
+					background:black;
+					margin: auto;
+					img{
+						opacity: 0.5;
+						height: 150%;
+						left: 0;
+						top: 0;
+						position:absolute;
+						-webkit-transition: all .5s ease;
+						   -moz-transition: all .5s ease;
+						    -ms-transition: all .5s ease;
+						     -o-transition: all .5s ease;
+						        transition: all .5s ease;
+					}
+				}
+				h1, h2, a.link {
+					font-size: 1.3rem;
+					font-weight: 600;
+					text-shadow: 10px 17px 20px #00000036;
+					text-align: center;
+					margin-top: 1rem;
+					position: absolute;
+					left: 0;
+					color: white;
+					top: 37%;
+					width: 100%;
+					text-align: center;
+					left: 0%;
+					font-weight: 200;
+					text-transform: uppercase;
+					-webkit-transition: all .5s ease;
+					-moz-transition: all .5s ease;
+					-ms-transition: all .5s ease;
+					-o-transition: all .5s ease;
+					transition: all .5s ease;
+				}
+				h2{
+					text-transform: uppercase;
+					font-size: 0.7rem;
+					top: 56%;
+				}
+				a.link{
+					font-size: 01rem;
+					top: 76%;
+					opacity: 0;
+				}
+				&:hover{
+					img{
+						opacity: 0.2;
+					}
+					a.link{
+						font-size: 1.3rem;
+						top: 38%;
+						opacity: 1;
+						text-decoration: none;
+					}	
+					h1{
+						top: 12%;
+						font-size: .6rem;
+					}
+					h2{
+						text-transform: uppercase;
+						font-size: 0.5rem;
+						top: 5%;
+					}
+				}
+			}
+		}
 	}
 }
+
 

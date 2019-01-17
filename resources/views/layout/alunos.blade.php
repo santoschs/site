@@ -8,33 +8,31 @@
 
 	<!-- Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,600i,700,700i,800" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="css/app.css">
+	<link rel="stylesheet" type="text/css" href="{{URL::to('/')}}/css/app.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 </head>
-<body>
+<body class="projeto">
 	<header>
 		@include('layout.navbar')
+		<div class="img_background_project">
+			<img src="{{URL::to('/')}}/img/projetos/{{$content_all['projeto']['img']}}">
+		</div>
 		<div class="container">
 			<div class="losangle"></div>
 			<div class="losangle"></div>
-			<div class="">
-				<div class="row">
-					<img src="{{URL::to('/')}}/img/logo.png" class="logo">	
-				</div>
-				<div class="row">
-					<img src="{{URL::to('/')}}/img/escrito.png" class="escrito">
-				</div>
+			<h1>{{$content_all['projeto']['nome']}}</h1>
+			<div class="col-md-8 m-auto text-center">
+				<h2>{{$content_all['projeto']['descricao_curta']}}</h2>
 			</div>
 		</div>
 	</header>
 	<main>
-		<section id="about" class="py-8">
-			@include('layout.sect_about')
-		</section>
-		<section id="projects" class="pt-12">
-			@include('layout.sect_project')
-		</section>
-	</main>
+		@if (!empty($content_all['projeto']['resumo']))
+		
+		@endif
+		<div class="losangle"></div>
+		<div class="losangle"></div>
+	</main>	
 	<footer>
 		@include('layout.footer')
 	</footer>

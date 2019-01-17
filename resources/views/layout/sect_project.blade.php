@@ -10,15 +10,16 @@
 	</div>
 	<div class="row mt-5">
 		@foreach ($content_all['projetos'] as $content)
-		{{-- {{var_dump($content)}} --}}
 		<div class="col-md-4">
-			<div class="project">
+			<a href="{{URL::to('/project/'.$content["id"])}}">
+				<div class="project">
 				<div class="project-figure">
-					<img src="{{URL::to('/')}}/img/{{ $content["img"] }}">
+					<img src="{{URL::to('/')}}/img/projetos/{{ $content["img"] }}">
 				</div>
 				<h1>{{ $content["nome"] }}</h1>
 				<p>{{ $content['descricao_curta'] }}</p>
 			</div>
+			</a>
 		</div>
 		@endforeach
 	</div>
