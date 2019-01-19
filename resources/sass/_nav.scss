@@ -1,0 +1,117 @@
+nav
+	{
+		padding: 1rem !important;
+		// box-shadow: 0px 0px 21px -7px black;
+		font-size: 1rem!important;		
+		a
+		{
+			will-change: font-size;
+			color: #5d5d5d !important;
+			-webkit-transition: all 0.25s cubic-bezier(0.4, 0, 1, 1);
+			-moz-transition: all 0.25s cubic-bezier(0.4, 0, 1, 1);
+			-ms-transition: all 0.25s cubic-bezier(0.4, 0, 1, 1);
+			-o-transition: all 0.25s cubic-bezier(0.4, 0, 1, 1);
+			transition: all 0.5s cubic-bezier(0.4, 0, 1, 1);
+		}
+		.navbar-light .navbar-toggler {
+			color: rgba(0, 0, 0, 0.5);
+			border-color: rgba(0, 0, 0, 0);
+		}
+	}
+	#show_menu_button{
+		img{
+			width: 1.5rem;
+		}
+		&:hover{
+			cursor: pointer;
+		}
+	}
+	.show_navbar{
+		&.show{
+			right: -9rem;	
+			#close_menu{
+				-webkit-animation: exibe_menu 1s cubic-bezier(0.15, 0.65, 0.57, 1.18);
+				-moz-animation: exibe_menu 1s cubic-bezier(0.15, 0.65, 0.57, 1.18);
+				-ms-animation: exibe_menu 1s cubic-bezier(0.15, 0.65, 0.57, 1.18);
+				-o-animation: exibe_menu 1s cubic-bezier(0.15, 0.65, 0.57, 1.18);
+				animation: exibe_menu 1s cubic-bezier(0.15, 0.65, 0.57, 1.18);
+			}
+		}
+		right: -80rem;		
+		position: fixed;
+		height: 100%;
+		background: rgba(0, 0, 0, 0);
+		top: 0px;
+		font-size: 1.5rem !important;
+		text-align: left;
+		padding-top: 10rem;
+		-webkit-transition: all .9s ease;
+		-moz-transition: all .9s ease;
+		-ms-transition: all .9s ease;
+		-o-transition: all .9s ease;
+		transition: all .9s ease;
+		a
+		{
+			color: white !important;
+		}
+		ul
+		{
+			position: absolute;
+			top: 23%;
+			right: 15rem;
+			width: 10rem;
+			li{
+				p{
+					font-size: 0.8rem;
+					color: white;
+					margin-top: 2rem;
+				}
+			}
+		}
+		@keyframes exibe_menu{
+			0%{
+				right: -34rem;
+			}
+			100%{
+				right: 34rem;
+			}
+		}
+		&:before
+		{
+			content: "";
+			position: absolute;
+			width: 150vh;
+			height: 100%;
+			left: -39rem;
+			top: 5rem;
+			-webkit-transform: rotate(45deg);
+			transform: rotate(45deg);
+			background: #2d2d2d;
+			z-index: -2;
+			box-shadow: 0px 0px 21px -1px black;
+		}
+		#close_menu{
+			width: 2.5rem;
+			background: $gray_tone;
+			position: absolute;
+			right: 34rem;
+			border-radius: 50%;
+			padding: 0.8rem;
+			height: 2.5rem;
+			padding-top: 0rem !important;
+			box-shadow: 0px 2px 6px -1px black;
+			top: 2rem;
+			-webkit-transition: all .25s ease;
+			-moz-transition: all .25s ease;
+			-ms-transition: all .25s ease;
+			-o-transition: all .25s ease;
+			transition: all .25s ease;
+			img{
+				max-width: 100%;
+				height: auto;
+			}
+			&:hover{
+				cursor: pointer;
+			}
+		}
+	}

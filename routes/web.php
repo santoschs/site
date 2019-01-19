@@ -16,5 +16,18 @@
 // });
 
 Route::get('/', 'ProjetosController@index');
-Route::get('/project/{id}', 'ProjetosController@show');
-Route::get('/pupil/{id}', 'ProjetosController@show_pupil');
+Route::get('/test', 'ProjetosController@test')->name('home');
+
+
+Route::get('/projetos', 'ProjetosController@projetos')->name('projetos');
+Route::get('/projeto/{id}', 'ProjetosController@projeto')->name('projeto');
+
+Route::get('/parceiros', 'ProjetosController@parceiros')->name('parceiros');
+Route::get('/parceiro/{id}', 'ProjetosController@parceiro')->name('parceiro');
+
+Route::get('/alunos', 'ProjetosController@alunos')->name('alunos');
+Route::get('/aluno/{id}', 'ProjetosController@aluno')->name('aluno');
+
+Route::get('/sobre', 'ProjetosController@sobre')->name('sobre');
+
+Route::get('/contato', 'ProjetosController@contato')->name('contato');

@@ -52,13 +52,13 @@
 					@if ($content == $aluno['id'])
 
 					<div class="aluno col-md-3">
-						<a href="{{URL::to('/pupil/'.$aluno['id'])}}">
+						<a href="{{ route('aluno', ['id' => $aluno['id']]) }}">
 							<div class="img-aluno">
 								<img src="{{URL::to('/')}}/img/alunos/{{$aluno['img']}}">
 							</div>
 							<h1>{{explode(' ', $aluno['nome'])[0] .' '. explode(' ', $aluno['nome'])[1]}}</h1>
 							<h2>{{$aluno['class']}}</h2>
-							<a class="link" href="{{URL::to('/pupil/'.$aluno['id'])}}">Conhecer</a>
+							<a class="link" href="{{ route('aluno', ['id' => $aluno['id']]) }}">Conhecer</a>
 						</a>
 					</div>
 
@@ -80,7 +80,9 @@
 			</div>	
 		</section>
 		@endif
-
+		<section class="text-center my-5">
+			<a class="btn" href="{{route('projetos')}}">Ver mais projetos</a>
+		</section>
 	</main>	
 	<footer>
 		@include('layout.footer')

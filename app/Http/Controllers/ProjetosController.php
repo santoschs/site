@@ -25,20 +25,58 @@ class ProjetosController extends Controller
             }
         }
 
+        if ($id_aluno != 1 && empty($content_all['aluno'])) {
+            abort(404);
+        }else if ($id != 1 && empty($content_all['projeto'])) {
+            abort(404);
+        }
+
         return $content_all;
 
     }
     public function index()
     {   
+        abort(404);
         $content_all = $this->select_all();
-        return view("welcome", compact("content_all"));
+        return view("layout.app", compact("content_all"));
     }
-    public function show($id){
+    public function test(){
+        $content_all = $this->select_all();
+        return view("layout.app", compact("content_all"));
+    }
+
+    public function projetos(){
+        abort(404);
+    }
+
+    public function projeto($id){
         $content_all = $this->select_all($id);
         return view("projetos.show", compact("content_all"));
     }
-    public function show_pupil($id){
-        $content_all = $this->select_all(1, $id);
-        return view("alunos.show", compact("content_all"));   
+
+    public function parceiros(){
+        abort(404);
     }
+    public function parceiro(){
+        abort(404);
+    }
+    public function alunos(){
+        abort(404);
+    }
+    public function aluno($id){
+        // abort(404);
+        $content_all = $this->select_all(1, $id);
+        return view("layout.aluno", compact("content_all"));   
+    }
+    public function sobre(){
+        abort(404);
+        $content_all = $this->select_all();
+        return view("about.show", compact("content_all"));      
+    }
+    public function contato(){
+        abort(404);
+        $content_all = $this->select_all();
+        return view("layout.contato", compact("content_all"));      
+    }
+
 }

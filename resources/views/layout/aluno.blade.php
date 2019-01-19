@@ -12,15 +12,12 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 </head>
 <body class="aluno">
-	<header>
+	 <header>
 		@include('layout.navbar')
-		{{-- <div class="img_background_project">
-			<img src="{{URL::to('/')}}/img/projetos/{{$content_all['projeto']['img']}}">
-		</div> --}}
 		<div class="container">
 			<div class="losangle"></div>
 			<div class="losangle"></div>
-			<h1>{{$content_all['projeto']['nome']}}</h1>
+			<h1>{{var_dump($content_all)}}</h1>
 			<div class="col-md-8 m-auto text-center">
 				<h2>{{$content_all['projeto']['descricao_curta']}}</h2>
 			</div>

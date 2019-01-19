@@ -1,4 +1,33 @@
-body
-{
-
-}
+footer{
+		// min-height:100vh;
+		position:relative;
+		background:$gray_tone;
+		color: white !important;
+		line-height: 1.5rem;
+		font-size: 0.7rem;
+		overflow:hidden;
+		.losangle{
+			@include losangos;
+			z-index: 1;
+			width: 80vh;
+			height: 80vh;
+			left: -210px;
+			background: rgb(41, 41, 41);
+		}
+		.copyright{
+			background: #131313;
+			padding:1rem;
+		}
+		.img-fluid{
+			width: 100% !important;
+			height: 100% !important;
+		}
+		.logo{
+			width: 7rem !important;
+			margin: auto;
+		}
+		.escrito{
+			width: 18rem !important;	
+			margin: auto;
+		}
+	}

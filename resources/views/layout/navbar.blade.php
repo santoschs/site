@@ -1,6 +1,6 @@
 <nav class="navbar navbar-light fixed-top">
 			<div class="container-fluid">
-				<a class="navbar-brand" href="{{URL::to('/')}}"><img src="{{URL::to('/')}}/img/logo.png" width='60'></a>
+				<a class="navbar-brand" href="{{route('home')}}"><img src="{{URL::to('/')}}/img/logo.png" width='60'></a>
 				<div class="ml-auto">
 					<a  id="show_menu_button">
 						<img src="{{URL::to('/')}}/img/menu.svg">
@@ -9,19 +9,19 @@
 				<div class="show_navbar" id="navbar">
 					<ul class="navbar-nav"> 
 						<li class="nav-item">
-							<a class="nav-link" href="{{URL::to('/')}}">Início</a>
+							<a class="nav-link" href="{{route('home')}}">Início</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="{{URL::to('/parceiros')}}">Parceiros</a>
+							<a class="nav-link" href="{{route('parceiros')}}">Parceiros</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="{{URL::to('/projetos')}}">Projetos</a>
+							<a class="nav-link" href="{{route('projetos')}}">Projetos</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="{{URL::to('/about')}}">Sobre mim</a>
+							<a class="nav-link" href="{{route('sobre')}}">Sobre mim</a>
 						</li>	
 						<li class="nav-item">
-							<a class="nav-link" href="{{URL::to('/contact')}}">Contato</a>
+							<a class="nav-link" href="{{route('contato')}}">Contato</a>
 						</li>	
 						<li>
 							<p>Carlos H. Silva Santos 

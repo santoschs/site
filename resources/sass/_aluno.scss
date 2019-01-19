@@ -1,0 +1,8 @@
+&.aluno{
+	header{
+		background: none;
+		&:before{
+			background: none;
+		}
+	}
+}
