@@ -1,50 +1,63 @@
 header
-	{
-		padding-top:10rem;
-		text-align:center;
-		position:relative;
-		background: #ffffffd4;
-		&:before{
-			content:"";
-			position: absolute;
-			width: 100%;
-			height: 100%;
-			left: 0;
-			top: 0;
-			background:url($url + '/img/background-header-2.jpg');	
-			z-index: -1;
-			background-size: cover;
-		}
-		min-height: 100vh;
-		background-size:cover;
+{
+	padding-top:10rem;
+	text-align:center;
+	position:relative;
+	// background: #ffffffd4;
+	overflow: hidden;
+	&:before{
+		// content:"";
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		left: 0;
+		top: 0;
+		background:url($url + '/img/background-header-2.jpg');	
+		z-index: -1;
+		background-size: cover;
+	}
+	min-height: 100vh;
+	background-size:cover;
 
-		.losangle{
-			@include losangos;
-			z-index: 0;
-			background:#f5f5f569;
-		}
-		.losangle:nth-child(2){
-			z-index: 0;
-			background: #f5f5f569;
-			left: auto;
-			right: -14rem;
-			width: 70vh;
-			height: 70vh;
-			top: 0rem;
-			
-		}
-		img
+	.losangle{
+		@include losangos;
+		z-index: 0;
+		background:#f5f5f569;
+	}
+	.losangle:nth-child(2){
+		z-index: 0;
+		background: #f5f5f569;
+		left: auto;
+		right: -14rem;
+		width: 70vh;
+		height: 70vh;
+		top: 0rem;
+
+	}
+	img
+	{
+		&.logo, &.escrito
 		{
-			&.logo, &.escrito
-			{
-				width: 10rem;
-				height: 100%;
-				margin:auto;
-			}
-			&.escrito
-			{
-				width: 27rem;
-				margin-top: 3rem;
-			}
+			width: 10rem;
+			height: 100%;
+			margin:auto;
+		}
+		&.escrito
+		{
+			width: 27rem;
+			margin-top: 3rem;
 		}
 	}
+	.video-bg{
+		position: fixed;
+		left: 0;
+		bottom: 10rem;
+		width: 100%;
+		z-index: -1;
+		bottom: 0;
+		opacity: 0.15;
+		video{
+			width:100%;
+		}
+	}
+}

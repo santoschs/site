@@ -1,9 +1,12 @@
 <nav class="navbar navbar-light fixed-top">
 			<div class="container-fluid">
-				<a class="navbar-brand" href="{{route('home')}}"><img src="{{URL::to('/')}}/img/logo.png" width='60'></a>
+				<a class="navbar-brand" href="{{route('home')}}">
+					<img src="{{URL::to('/')}}/img/logo_white.png" width='60' class="logo_white">
+					<img src="{{URL::to('/')}}/img/logo.png" width='60' class="logo_black"></a>
 				<div class="ml-auto">
 					<a  id="show_menu_button">
-						<img src="{{URL::to('/')}}/img/menu.svg">
+						<img class="logo_white" src="{{URL::to('/')}}/img/menu_white.svg">
+						<img class="logo_black" src="{{URL::to('/')}}/img/menu.svg">
 					</a>
 				</div>
 				<div class="show_navbar" id="navbar">
@@ -29,6 +32,7 @@
 								<br><a href="tel:+5515981359639"><i class="fas fa-mobile-alt"></i> +55 15 98135-9639</a>
 							</p>
 						</li>
+						<div id="google_translate_element"></div>
 					</ul>
 					<a id="close_menu">
 						<img src="{{URL::to('/')}}/img/cross-symbol.svg">

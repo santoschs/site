@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700,900);@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700,900);@import url(https://fonts.googleapis.com/css?family=Space+Mono);@charset "UTF-8";
 /*!
  * Bootstrap v4.2.1 (https://getbootstrap.com/)
  * Copyright 2011-2018 The Bootstrap Authors
@@ -11024,19 +11024,81 @@ body .italic {
 
 body {
   font-family: "Lato", sans-serif;
-  background: #f5f5f5;
+  background: #3e3e3e;
+  color: white;
   overflow-x: hidden;
+}
+body .logo_black {
+  display: none;
+}
+body .navbar-brand img {
+  opacity: 0;
+  transition: all 0.25s ease;
+}
+body .parallax {
+  width: 100%;
+  min-height: 100vh;
+  background-size: 100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  opacity: 0.2;
+  background-position: 50% 0;
+}
+@-webkit-keyframes animMouse {
+  0% {
+    top: -10px;
+  }
+  100% {
+    top: 10px;
+  }
+}
+@keyframes animMouse {
+  0% {
+    top: -10px;
+  }
+  100% {
+    top: 10px;
+  }
+}
+body .mouse_scroll {
+  width: 40px;
+  margin: auto;
+  display: block;
+  margin-top: 5rem;
+  position: relative;
+  -webkit-animation: animMouse infinite 0.99s ease-in-out alternate;
+  animation: animMouse infinite 0.99s ease-in-out alternate;
+  color: white !important;
+  text-decoration: none;
+}
+body .mouse_scroll img {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+body .mouse_scroll p {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  opacity: 0;
+  transition: all 0.99s ease;
+}
+body .mouse_scroll:hover {
+  cursor: pointer;
+}
+body .mouse_scroll:hover p {
+  opacity: 1;
+}
+body .lead {
+  font-weight: 500;
 }
 body header {
   padding-top: 10rem;
   text-align: center;
   position: relative;
-  background: #ffffffd4;
+  overflow: hidden;
   min-height: 100vh;
   background-size: cover;
 }
 body header:before {
-  content: "";
   position: absolute;
   width: 100%;
   height: 100%;
@@ -11055,11 +11117,7 @@ body header .losangle {
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
   position: absolute;
-  box-shadow: 10px 20px 47px 5px #0000003d;
   left: -20rem;
-  transition: all 0.9s cubic-bezier(0.4, 0, 1, 1);
-  will-change: transform;
-  will-change: contents;
   z-index: 0;
   background: #f5f5f569;
 }
@@ -11080,6 +11138,18 @@ body header img.logo, body header img.escrito {
 body header img.escrito {
   width: 27rem;
   margin-top: 3rem;
+}
+body header .video-bg {
+  position: fixed;
+  left: 0;
+  bottom: 10rem;
+  width: 100%;
+  z-index: -1;
+  bottom: 0;
+  opacity: 0.15;
+}
+body header .video-bg video {
+  width: 100%;
 }
 body nav {
   padding: 1rem !important;
@@ -11182,18 +11252,34 @@ body .show_navbar #close_menu:hover {
   cursor: pointer;
 }
 body main {
+  background: #3e3e3e;
   min-height: 100vh;
   font-weight: 500 !important;
-  padding: 5rem;
   position: relative;
   z-index: 0;
 }
 body main .lead {
   font-size: 2rem;
-  font-weight: 300;
+  font-weight: 500;
 }
 body main #about {
   z-index: 0;
+  min-height: 100vh;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+body main #about:before {
+  background-image: url("http://localhost/carlos_santos/public/img/bg_welcome.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  opacity: 0.2;
 }
 body main #about .losangle {
   z-index: -1;
@@ -11204,11 +11290,9 @@ body main #about .losangle {
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
   position: absolute;
-  box-shadow: 10px 20px 47px 5px #0000003d;
   left: -20rem;
-  transition: all 0.9s cubic-bezier(0.4, 0, 1, 1);
-  will-change: transform;
-  will-change: contents;
+  background: #212529;
+  left: -21rem;
 }
 body main #about .losangle:nth-child(2) {
   z-index: -1;
@@ -11219,23 +11303,80 @@ body main #about .losangle:nth-child(2) {
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
   position: absolute;
-  box-shadow: 10px 20px 47px 5px #0000003d;
   left: -20rem;
-  transition: all 0.9s cubic-bezier(0.4, 0, 1, 1);
-  will-change: transform;
-  will-change: contents;
   left: auto;
-  right: -7rem;
-  top: -14rem;
-  background: #92e6e6;
+  right: -18rem;
+  top: -14.5rem;
+  background: #212529;
   width: 70vh;
   height: 70vh;
+}
+body main #projects {
+  position: relative;
+}
+body main #projects:before {
+  background-image: url("http://localhost/carlos_santos/public/img/bg_projetos.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  opacity: 0.2;
+}
+body main #projects .losangle {
+  z-index: -1;
+  content: "";
+  width: 100vh;
+  height: 100vh;
+  background: #f5f5f5;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: absolute;
+  left: -20rem;
+  background: #212529;
+  right: -48rem;
+  left: auto;
+  width: 200vh;
+  height: 220vh;
+  top: -35rem;
+}
+body main #projects .losangle:nth-child(2) {
+  left: -21rem;
+  right: auto;
+  top: 30rem;
+  width: 100vh;
+  height: 100vh;
+}
+body main #alunos {
+  position: relative;
+  background: #212529cf;
+  min-height: 100vh;
+}
+body main #alunos:before {
+  content: "";
+  background-image: url("http://localhost/carlos_santos/public/img/bg_alunos.jpg");
+  position: absolute;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+}
+body main #contato {
+  background: white;
+  color: #3e3e3e;
 }
 body main strong {
   font-weight: 900;
 }
 body main p {
-  text-shadow: 10px 17px 20px #00000036;
   line-height: 3rem;
 }
 body main .container-minor {
@@ -11248,20 +11389,21 @@ body main .container-minor {
 }
 body main .btn {
   padding: 1rem 3.5rem 1rem 3.5rem;
-  border-radius: 30px;
-  background: #6ac3c3;
+  border-radius: 0.4rem;
+  background: #212529;
   color: white;
   box-shadow: 20px 7px 57px -21px black;
   transition: all 0.5s cubic-bezier(0.25, 0.81, 0.35, 0.87);
   font-size: 1.5rem;
+  border: 3px solid transparent;
   position: relative;
   -webkit-perspective: 100vw;
   perspective: 100vw;
   overflow: hidden;
 }
 body main .btn:hover {
-  background: #66a9bf;
   color: white;
+  border-color: white;
 }
 body main .btn:focus, body main .btn.focus {
   outline: 0;
@@ -11327,11 +11469,11 @@ body main .project:hover {
 }
 body footer {
   position: relative;
-  background: #2d2d2d;
   color: white !important;
   line-height: 1.5rem;
   font-size: 0.7rem;
   overflow: hidden;
+  min-height: 100vh;
 }
 body footer .losangle {
   z-index: -1;
@@ -11342,11 +11484,7 @@ body footer .losangle {
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
   position: absolute;
-  box-shadow: 10px 20px 47px 5px #0000003d;
   left: -20rem;
-  transition: all 0.9s cubic-bezier(0.4, 0, 1, 1);
-  will-change: transform;
-  will-change: contents;
   z-index: 1;
   width: 80vh;
   height: 80vh;
@@ -11368,6 +11506,19 @@ body footer .logo {
 body footer .escrito {
   width: 18rem !important;
   margin: auto;
+}
+body footer .lead {
+  font-weight: 500;
+}
+body footer a {
+  color: white;
+}
+body footer .copyright_footer_content {
+  position: absolute;
+  width: 80%;
+  bottom: 0px;
+  margin: auto;
+  left: calc(50% - calc(80%/2));
 }
 body p:first-letter {
   text-transform: capitalize !important;
@@ -11413,21 +11564,14 @@ body.projeto main .losangle {
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
   position: absolute;
-  box-shadow: 10px 20px 47px 5px #0000003d;
   left: -20rem;
-  transition: all 0.9s cubic-bezier(0.4, 0, 1, 1);
-  will-change: transform;
-  will-change: contents;
 }
 body.projeto main .losangle:nth-child(1) {
   left: auto;
   right: -20rem;
 }
 body.projeto main .losangle:nth-child(2) {
-  left: 0rem;
-  width: 120vh;
-  height: 120vh;
-  top: 7rem;
+  display: none;
 }
 body.projeto main .losangle:nth-child(3) {
   left: auto;
@@ -11463,7 +11607,7 @@ body.projeto section h1 {
 body.projeto section .lead {
   font-size: 1.6rem !important;
 }
-body.projeto section .aluno .img-aluno {
+body .aluno .img-aluno {
   border-radius: 50%;
   box-shadow: 10px 17px 20px #00000036;
   overflow: hidden;
@@ -11474,15 +11618,15 @@ body.projeto section .aluno .img-aluno {
   background: black;
   margin: auto;
 }
-body.projeto section .aluno .img-aluno img {
+body .aluno .img-aluno img {
   opacity: 0.5;
-  height: 150%;
+  height: 100%;
   left: 0;
   top: 0;
   position: absolute;
   transition: all 0.5s ease;
 }
-body.projeto section .aluno h1, body.projeto section .aluno h2, body.projeto section .aluno a.link {
+body .aluno h1, body .aluno h2, body .aluno a.link {
   font-size: 1.3rem;
   font-weight: 600;
   text-shadow: 10px 17px 20px #00000036;
@@ -11499,30 +11643,30 @@ body.projeto section .aluno h1, body.projeto section .aluno h2, body.projeto sec
   text-transform: uppercase;
   transition: all 0.5s ease;
 }
-body.projeto section .aluno h2 {
+body .aluno h2 {
   text-transform: uppercase;
   font-size: 0.7rem;
   top: 56%;
 }
-body.projeto section .aluno a.link {
+body .aluno a.link {
   font-size: 1rem;
   top: 76%;
   opacity: 0;
 }
-body.projeto section .aluno:hover img {
+body .aluno:hover img {
   opacity: 0.2;
 }
-body.projeto section .aluno:hover a.link {
+body .aluno:hover a.link {
   font-size: 1.3rem;
   top: 38%;
   opacity: 1;
   text-decoration: none;
 }
-body.projeto section .aluno:hover h1 {
+body .aluno:hover h1 {
   top: 12%;
   font-size: 0.6rem;
 }
-body.projeto section .aluno:hover h2 {
+body .aluno:hover h2 {
   text-transform: uppercase;
   font-size: 0.5rem;
   top: 5%;
@@ -11532,6 +11676,147 @@ body.aluno header {
 }
 body.aluno header:before {
   background: none;
+}
+
+.sobre header {
+  text-align: left;
+}
+.sobre h1 {
+  font-size: 5rem;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+.sobre .divisor {
+  width: 30rem;
+  height: 0.1rem;
+  background: white;
+  display: block;
+  margin: auto;
+}
+.sobre .divisor.black {
+  background: black;
+  margin-top: 1rem;
+  margin-left: 0;
+  margin-bottom: 2rem;
+  width: 20rem;
+}
+.sobre .divisor.blackout {
+  background: white;
+}
+.sobre .menu_sobre {
+  padding-top: 2rem;
+}
+.sobre .menu_sobre a {
+  color: black;
+  font-size: 1.3rem;
+  padding-left: 1rem;
+  border-bottom: 0.02rem solid transparent;
+  padding-bottom: 0.4rem;
+  transition: all 0.25s ease;
+  display: block;
+  margin-top: 1rem;
+  border-left: 0.05rem solid;
+}
+.sobre .menu_sobre a.active {
+  border-left: 0.5rem solid;
+}
+.sobre .menu_sobre a:hover {
+  border-bottom: 0.02rem solid black;
+}
+.sobre .menu_sobre.blackout a {
+  color: white;
+}
+.sobre .img_carlos.picture {
+  overflow: hidden;
+  width: 300px;
+}
+.sobre .img_carlos.picture .more {
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: #0000008a;
+  transition: all 0.99s ease;
+}
+.sobre .img_carlos.picture .more .links {
+  min-width: 50%;
+  text-align: center;
+  margin: auto;
+  margin-top: calc(50% - calc(64px/2));
+}
+.sobre .img_carlos.picture .more .links a {
+  color: white;
+  text-decoration: none;
+  font-size: 2.5rem;
+  position: relative;
+  top: 6rem;
+  transition: all 0.99s ease;
+}
+.sobre .img_carlos.picture .more .links a:hover {
+  text-decoration: none;
+}
+.sobre .img_carlos.picture .more .links a:nth-child(2) {
+  top: 8rem;
+}
+.sobre .img_carlos.picture .more .links a:nth-child(3) {
+  top: 10rem;
+}
+.sobre .img_carlos.picture .more .links a:nth-child(4) {
+  top: 12rem;
+}
+.sobre .img_carlos.picture:hover .more {
+  opacity: 1;
+}
+.sobre .img_carlos.picture:hover .more a {
+  top: 0 !important;
+}
+.sobre section#text_about {
+  background: white;
+  color: black;
+  font-family: "Space Mono", monospace;
+  transition: all 0.25s ease;
+}
+.sobre section#text_about.blackout {
+  background: #1e1a1a;
+  color: white;
+}
+.sobre section#text_about p {
+  font-size: 1.25rem;
+}
+.sobre section#text_about h2 {
+  width: 100%;
+}
+.sobre .experience {
+  position: relative;
+}
+.sobre .experience:before {
+  width: 3px;
+  height: 70%;
+  position: absolute;
+  top: 11px;
+  left: -20px;
+  background: white;
+  content: "";
+}
+.sobre .experience .experience_item {
+  position: relative;
+}
+.sobre .experience .experience_item:before {
+  content: "";
+  width: 1.5rem;
+  height: 1.5rem;
+  position: absolute;
+  left: -30px;
+  top: 5px;
+  background: #1e1a1a;
+  border-radius: 50%;
+  border: white solid;
+  transition: all 0.25s ease;
+}
+.sobre .experience .experience_item.on:before {
+  background: #adadad;
 }
 
 body.error_page main {

@@ -1,11 +1,12 @@
 footer{
 		// min-height:100vh;
 		position:relative;
-		background:$gray_tone;
+		// background:$gray_tone;
 		color: white !important;
 		line-height: 1.5rem;
 		font-size: 0.7rem;
 		overflow:hidden;
+		min-height: 100vh;
 		.losangle{
 			@include losangos;
 			z-index: 1;
@@ -29,5 +30,18 @@ footer{
 		.escrito{
 			width: 18rem !important;	
 			margin: auto;
+		}
+		.lead{
+			font-weight: 500;
+		}
+		a{
+			color: white;
+		}
+		.copyright_footer_content{
+			position: absolute;
+			width: 80%;
+			bottom: 0px;
+			margin: auto;
+			left: calc(50% - calc(80%/2));
 		}
 	}

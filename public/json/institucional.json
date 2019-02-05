@@ -1,6 +1,8 @@
 {
-	"about":"Bem vindo ao meu site! Aqui estão reunidas páginas que falam um pouco <strong>sobre mim</strong>, e sobre <strong>projetos</strong> que venho desenvolvendo, além de <strong>alunos, instituições e parceiros</strong> com quem trabalhei.",
+	"about":"Este é o meu site! Aqui estão reunidas páginas que falam um pouco <strong>sobre mim</strong>, e sobre <strong>projetos</strong> que venho desenvolvendo, além de <strong>alunos, instituições e parceiros</strong> com quem trabalhei.",
 	"projects":"Veja um pouco de alguns projetos que me envolvi e desenvolvi durante minha carreira. Veja mais destes na página <strong>projetos</strong>",
-	"footer":"<p>Atualmente é professor no Instituto Federal de Educação, Ciência e Tecnologia de São Paulo (IFSP), câmpus Itapetininga, e coordenador da Especialização de Informática Aplicada à Educação nesta unidade.</p>",
+	"alunos":"Durante minha carreira como professor tive a oportunidade de trabalhar em diversos projetos com diferentes profissionais, alguns destes orientei e deixei uma área especial para eles aqui.",
+	"footer":"Atualmente é professor no Instituto Federal de Educação, Ciência e Tecnologia de São Paulo (IFSP), câmpus Itapetininga, e coordenador da Especialização de Informática Aplicada à Educação nesta unidade.",
 	"about_page": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+	
 }	

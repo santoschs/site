@@ -36,7 +36,6 @@ class ProjetosController extends Controller
     }
     public function index()
     {   
-        abort(404);
         $content_all = $this->select_all();
         return view("layout.app", compact("content_all"));
     }
@@ -48,7 +47,6 @@ class ProjetosController extends Controller
     public function projetos(){
         abort(404);
     }
-
     public function projeto($id){
         $content_all = $this->select_all($id);
         return view("projetos.show", compact("content_all"));
@@ -69,7 +67,7 @@ class ProjetosController extends Controller
         return view("layout.aluno", compact("content_all"));   
     }
     public function sobre(){
-        abort(404);
+        // abort(404);
         $content_all = $this->select_all();
         return view("about.show", compact("content_all"));      
     }
@@ -77,6 +75,9 @@ class ProjetosController extends Controller
         abort(404);
         $content_all = $this->select_all();
         return view("layout.contato", compact("content_all"));      
+    }
+    public function new_index(){
+        return view('renew.index');
     }
 
 }

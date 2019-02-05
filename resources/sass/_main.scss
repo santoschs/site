@@ -1,35 +1,110 @@
 main{
-		min-height:100vh;
-		font-weight: 500 !important;
-		padding:5rem;
-		position:relative;
+	$background_btn : #212529 ;
+	$background_btn_hover : #43464a ;
+	background:$background_color;
+	min-height:100vh;
+	font-weight: 500 !important;
+	// padding:5rem;
+	position:relative;
+	z-index: 0;
+	
+	.lead {
+		font-size: 2rem;
+		font-weight: 500;
+	}
+	#about{
 		z-index: 0;
-		
-		.lead {
-			font-size: 2rem;
-			font-weight: 300;
+		min-height: 100vh;
+		padding-top:5rem;
+		padding-bottom:5rem;
+		&:before{
+			background-image:url($url + 'img/bg_welcome.jpg');
+			background-size:cover;
+			background-attachment:fixed;	
+			content: "";
+			position: absolute;
+			left: 0;
+			top:0;
+			width:100%;
+			height: 100%;
+			z-index: -2;
+			opacity: 0.2;
 		}
-		#about{
-			z-index: 0;
-			
-			.losangle{
-				@include losangos;
+		.losangle{
+			@include losangos;
+			background:$background_btn;
+			left: -21rem;
+		}
+		.losangle:nth-child(2){
+			@include losangos;
+			left: auto;
+			right: -18rem;
+			top: -14.5rem;
+			background:$background_btn;
+			width: 70vh;
+			height: 70vh;
+		}
+	}
+
+	#projects{
+		position:relative;
+		&:before{
+			background-image:url($url + 'img/bg_projetos.jpg');
+			background-size:cover;
+			background-attachment:fixed;	
+			content: "";
+			position: absolute;
+			left: 0;
+			top:0;
+			width:100%;
+			height: 100%;
+			z-index: -2;
+			opacity: 0.2;
+		}
+		.losangle{
+			@include losangos;
+			background:$background_btn;
+			right: -48rem;
+			left: auto;
+			width: 200vh;
+			height: 220vh;
+			top: -35rem;
+			&:nth-child(2){
+				left: -21rem;
+				right: auto;
+				top: 30rem;
+				width: 100vh;
+				height: 100vh;
 			}
-			.losangle:nth-child(2){
-				@include losangos;
-				left: auto;
-				right: -7rem;
-				top: -14rem;
-				background: #92e6e6;
-				width: 70vh;
-				height: 70vh;
-			}
 		}
-		strong{
-			font-weight: 900;
+	}
+	#alunos{
+		position:relative;
+		background: #212529cf;
+		min-height: 100vh;
+		&:before{
+			content: "";
+			background-image:url($url + 'img/bg_alunos.jpg');
+			position:absolute;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			z-index: -2;
 		}
-		p{
-			text-shadow: 10px 17px 20px #00000036;
+	}
+	#contato{
+		background:white;
+		color: $background_color;
+	}
+	strong{
+		font-weight: 900;
+	}
+	p{
+			// text-shadow: 10px 17px 20px #00000036;
 			line-height: 3rem;
 		}
 		.container-minor{
@@ -38,8 +113,8 @@ main{
 		}
 		.btn{
 			padding: 1rem 3.5rem 1rem 3.5rem;
-			border-radius: 30px;
-			background: #6ac3c3;
+			border-radius: .4rem;
+			background: $background_btn;
 			color: white;
 			box-shadow: 20px 7px 57px -21px black;
 
@@ -49,9 +124,11 @@ main{
 			-o-transition: all .5s cubic-bezier(0.25, 0.81, 0.35, 0.87);
 			transition: all .5s cubic-bezier(0.25, 0.81, 0.35, 0.87);
 			font-size: 1.5rem;
+			border:3px solid transparent;
 			&:hover{
-				background: #66a9bf;
+				// background: $background_btn_hover;
 				color: white;
+				border-color:white;
 			}
 			&:focus, &.focus {
 				outline: 0;
