@@ -12,5 +12,14 @@
 			]
 		}
 	],
-	"sobre_mim":""
+	"sobre_mim":"",
+	"formacao":[
+		{
+			[],
+			
+		}
+	], 
+	//reconhecimentos e premios
+	"reconhecimento_premios":"",
+	"linhas_pesquisa":"",
 }	
