@@ -6,7 +6,7 @@
 </head>
 <body>
 	<header>
-		<div class="video-bg">
+		<div class="video-bg" id="video_bg">
 			<video autoplay preload>
 				<source src="{{URL::to('/')}}/video/macbook_video.m4v" preload type="video/mp4">
 				</video>

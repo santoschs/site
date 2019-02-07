@@ -168,4 +168,9 @@ $(function(){
 			$(".divisor").removeClass("blackout");
 		}
 	});
+
+	var vid = document.getElementById("video_bg");
+	vid.autoplay = true;
+	vid.load();
+
 });
