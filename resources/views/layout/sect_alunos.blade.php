@@ -1,15 +1,15 @@
 <div class="container">
 	<div class="row text-center">
 		<div class="col-md-12">
-			<img src="{{URL::to('/')}}/img/handshake.svg" width="150" class="mt-3">
-			<p class="indicator text-uppercase mb-3">Alunos e parceiros</p>
-			<p class="lead">
+			<img src="{{URL::to('/')}}/img/handshake.svg" width="150" class="mt-3" data-aos="fade-up" data-aos-duration="1000">
+			<p class="indicator text-uppercase mb-3" data-aos="fade-up" data-aos-duration="1000">Alunos e parceiros</p>
+			<p class="lead" data-aos="fade-up" data-aos-duration="1500">
 				@php 
 				echo( $content_all["institucional"]["alunos"]);
 				@endphp
 			</p>
-			<p class="lead mt-5">Ficou curioso? Conheça alguns deles</p>
-			<a class="btn" href="{{route('alunos')}}">Ver mais</a>
+			<p class="lead mt-5" data-aos="fade-up" data-aos-duration="2500">Ficou curioso? Conheça alguns deles</p>
+			<a class="btn" href="{{route('alunos')}}" data-aos="fade-up" data-aos-duration="2000">Ver mais</a>
 		</div>
 	</div>
 	{{-- <div class="row mt-3">

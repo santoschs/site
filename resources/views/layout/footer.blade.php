@@ -21,10 +21,3 @@
 		</div>
 	</div>
 </div>
-{{-- <div class="container-fluid copyright">
-	<div class="container">
-		<div class="text-center">
-			© Copyright - carlos-santos.com
-		</div>
-	</div>
-</div> --}}
