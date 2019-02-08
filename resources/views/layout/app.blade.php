@@ -11,8 +11,8 @@
 				<source src="{{URL::to('/')}}/video/macbook_video.m4v" preload type="video/mp4">
 				</video>
 			</div>
-			@include('layout.navbar')
-			<div class="container">
+			{{-- @include('layout.navbar')
+			<div class="container" style="display:none">
 
 				<div class="">
 					<div class="row" data-aos="fade-up" data-aos-duration="2000" >
@@ -23,15 +23,15 @@
 					</div>
 					<div class="row ">
 						{{-- <p class="lead text-center m-auto f_500 mt-3">Doutor, Professor, Pai e </p> --}}
-					</div>
+				{{-- 	</div>
 				</div>
-			</div>
-			<a class="mouse_scroll mb-10 text-center" href="#about">
+			</div> --}} 
+			{{-- <a class="mouse_scroll mb-10 text-center" href="#about">
 				<p class="uppercase">scroll</p>
 				<img src="{{URL::to('/')}}/img/mouse.svg">
-			</a>
+			</a> --}}
 		</header>
-		<main>
+		{{-- <main>
 			<section id="about" class="py-4">
 				@include('layout.sect_about')
 			</section>
@@ -41,8 +41,8 @@
 			<section id="alunos" class="py-5">
 				@include('layout.sect_alunos')
 			</section>
-		</main>
-		<footer>
+		</main> --}}
+		<footer style="position: fixed; top: -14px; width: 100%; ">
 			@include('layout.footer')
 		</footer>
 		@include('scripts');
