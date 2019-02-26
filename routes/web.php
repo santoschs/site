@@ -25,10 +25,12 @@ Route::get('/projeto/{id}', 'ProjetosController@projeto')->name('projeto');
 Route::get('/parceiros', 'ProjetosController@parceiros')->name('parceiros');
 Route::get('/parceiro/{id}', 'ProjetosController@parceiro')->name('parceiro');
 
-Route::get('/alunos', 'ProjetosController@alunos')->name('alunos');
-Route::get('/aluno/{id}', 'ProjetosController@aluno')->name('aluno');
+Route::get('/colaboradores', 'ProjetosController@alunos')->name('colaboradores');
+Route::get('/colaborador/{id}', 'ProjetosController@aluno')->name('aluno');
 
 Route::get('/sobre', 'ProjetosController@sobre')->name('sobre');
 
 Route::get('/contato', 'ProjetosController@contato')->name('contato');
 Route::get('/new_index', 'ProjetosController@new_index');
+
+

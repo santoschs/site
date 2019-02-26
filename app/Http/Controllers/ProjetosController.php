@@ -31,7 +31,7 @@ class ProjetosController extends Controller
 
         $content_all = array();
         $content_all['projetos']    =  $this->get_json("projetos/");
-        $content_all['alunos']      =    $this->get_json("alunos/");
+        $content_all['colaboradores']      =    $this->get_json("alunos/");
         $content_all['institucional']   = json_decode(file_get_contents("json/institucional.json"), true);      
 
 
@@ -40,13 +40,13 @@ class ProjetosController extends Controller
                 $content_all['projeto'] = $content;     
             }
         }
-        foreach ($content_all['alunos'] as $content) {
+        foreach ($content_all['colaboradores'] as $content) {
             if ($content['id'] == $id_aluno) {
-                $content_all['aluno'] = $content;     
+                $content_all['colaborador'] = $content;     
             }
         }
 
-        if ($id_aluno != 1 && empty($content_all['aluno'])) {
+        if ($id_aluno != 1 && empty($content_all['colaborador'])) {
             abort(404);
         }
         else if ($id != 1 && empty($content_all['projeto'])) {
@@ -67,7 +67,8 @@ class ProjetosController extends Controller
     }
 
     public function projetos(){
-        abort(404);
+        $content_all = $this->select_all();
+        return view("projetos.all", compact("content_all"));
     }
     public function projeto($id){
         $content_all = $this->select_all($id);
@@ -75,13 +76,14 @@ class ProjetosController extends Controller
     }
 
     public function parceiros(){
-        abort(404);
+        // abort(404);
     }
     public function parceiro(){
         abort(404);
     }
     public function alunos(){
-        abort(404);
+        $content_all = $this->select_all();
+        return view("alunos.all", compact("content_all"));
     }
     public function aluno($id){
         // abort(404);
@@ -96,7 +98,7 @@ class ProjetosController extends Controller
     public function contato(){
         abort(404);
         $content_all = $this->select_all();
-        return view("layout.contato", compact("content_all"));      
+        return view("contato.show", compact("content_all"));      
     }
     public function new_index(){
         return view('renew.index');

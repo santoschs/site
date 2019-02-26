@@ -1,29 +1,113 @@
 {
-
-	"about":"Este é o meu site! Aqui estão reunidas páginas que falam um pouco <strong>sobre mim</strong>, e sobre <strong>projetos</strong> que venho desenvolvendo, além de <strong>alunos, instituições e parceiros</strong> com quem trabalhei.",
 	"projects":"Veja um pouco de alguns projetos que me envolvi e desenvolvi durante minha carreira. Veja mais destes na página <strong>projetos</strong>",
-	"alunos":"Durante minha carreira como professor tive a oportunidade de trabalhar em diversos projetos com diferentes profissionais, alguns destes orientei e deixei uma área especial para eles aqui.",
+	"colaboradores":"Durante minha carreira como professor tive a oportunidade de trabalhar em diversos projetos com diferentes profissionais, alguns destes orientei e deixei uma área especial para eles aqui.",
 	"footer":"Atualmente é professor no Instituto Federal de Educação, Ciência e Tecnologia de São Paulo (IFSP), câmpus Itapetininga, e coordenador da Especialização de Informática Aplicada à Educação nesta unidade.",
 	"about_page": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-	"about":"Bem vindo ao meu site! Aqui estão reunidas páginas que falam um pouco <strong>sobre mim</strong>, e sobre <strong>projetos</strong> que venho desenvolvendo, além de <strong>alunos, instituições e parceiros</strong> com quem trabalhei.",
-	"projects":"Projetos",
+	"about":"Eu sou o Carlos Henrique, atualmente sou professor do Instituto Federal de Educação, Ciência e Tecnologia de São Paulo - Campus Itapetininga, aqui estão reunidas páginas que falam um pouco <strong>sobre mim</strong>, e sobre <strong>projetos</strong> que venho desenvolvendo, além de <strong>alunos, instituições e parceiros</strong> com quem trabalhei.",
+	"projects":"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
 	"footer":"<p>Atualmente é professor no Instituto Federal de Educação, Ciência e Tecnologia de São Paulo (IFSP), câmpus Itapetininga, e coordenador da Especialização de Informática Aplicada à Educação nesta unidade.</p>",
-	"minha_historia": "",
+	"minha_historia": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", 
+	"sobre_mim":"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", 
 	"experiencia":[
 		{
-				"instituição":"",
-				"funcao":"",
-				"periodo":""
+			"instituição":"Instituto Federal de Educação, Ciência e Tecnologia, campus Itapetininga, IFSP, Brasil.",
+			"vinculo":"Professor",
+			"periodo":"2010 - atualmente"
+		},
+		{
+			"instituição":"Massachusetts Institute of Technology, MIT, Estados Unidos.",
+			"vinculo":"Professor Visitante",
+			"periodo":"2012 - 2013"
+		},
+		{
+			"instituição":"Orbisat da Amazônia Indústria e Aerolevantamento S.A., ORBISAT, Brasil.",
+			"vinculo":"Pesquisador",
+			"periodo":"2008 - 2010"
+		},
+		{
+			"instituição":"The Institute Of Eletrical And Eletronical Engineering, IEEE, Brasil.",
+			"vinculo":"Colaborador",
+			"periodo":"2008 - 2010"
+		},
+		{
+			"instituição":"Universidade Estadual de Campinas, UNICAMP, Brasil.",
+			"vinculo":"Colaborador",
+			"periodo":"2010 - 2012"
+		},
+		{
+			"instituição":"Universidade Estadual de Campinas, UNICAMP, Brasil.",
+			"vinculo":"Colaborador",
+			"periodo":"2010 - 2012"
+		},
+		{
+			"instituição":"Technische Universität München, TUM, Alemanha.",
+			"vinculo":"Pesquisador Visitante",
+			"periodo":"2009 - 2009"
 		}
+		
 	],
-	"sobre_mim":"",
 	"formacao":
 	[	
 		{
-			"instituicao":"lorem",
-			"formacao":"nivel"
+			"periodo":"2005 - 2010",
+			"formacao":"Doutorado em Engenharia Elétrica (Conceito CAPES 6).",
+			"instituicao":"Universidade Estadual de Campinas, UNICAMP, Brasil ",
+			"titulo": "Computação Bio-Inspirada e Paralela para a Análise de Estruturas Metamateriais em Microondas e Fotônica com período sanduíche em Cornell University (Orientador: Profa. Dra. Michal Lipson (OSA Fellow e IEEE Senior))., Ano de obtenção: 2010. ",
+			"Orientador":" Hugo Enrique Hernández Figueroa.",
+			"Bolsa": "Bolsista do(a): Fundação de Amparo à Pesquisa do Estado de São Paulo, FAPESP, Brasil. ",
+			"Palavras-chave": "Computação Paralela; Computação Bio-inspirada; Cluster de Computadores; Orientação a Objetos; Eletromagnetismo Computacional; Métodos Numéricos. "
+		},
+		{
+			"periodo":"2003 - 2005",
+			"formacao":"Mestrado em Engenharia Elétrica (Conceito CAPES 6).",
+			"instituicao":"Universidade Estadual de Campinas, UNICAMP, Brasil.",
+			"titulo": "Computação Paralela Aplicada a Problemas Eletromagnéticos Utilizando o Método FDTD,Ano de Obtenção: 2005.",
+			"Orientador":" Hugo Enrique Hernández Figueroa",
+			"Bolsa": "Bolsista do(a): Coordenação de Aperfeiçoamento de Pessoal de Nível Superior, CAPES, Brasil. ",
+			"Palavras-chave": "Processamento Paralelo; Diferenças Finitas; Cluster Beowulf; Métodos Numéricos; Equações de Maxwell; Software Livre. "
+		},
+		{
+			"periodo":"1999 - 2003",
+			"formacao":"Graduação em Tecnologia em Informática. ",
+			"instituicao":"Universidade Estadual de Campinas, UNICAMP, Brasil.",
+			"titulo": "Análise e desenvolvimentos de soluções de equações lineares em computação de alta performance. ",
+			"Orientador":" Marli de Freitas Gomes Hernandez.",
+			"Bolsa": "Bolsista do(a): Conselho Nacional de Desenvolvimento Científico e Tecnológico, CNPq, Brasil."
+		},
+		{
+			"periodo":"1996 - 1998",
+			"formacao":"Curso técnico/profissionalizante em Técnico em Processamento de dados. ",
+			"instituicao":"EMPSG Dr. Achilles de Almeida, ACHILLES, Brasil."
 		}
 	],
-	"reconhecimento_premios":"",
-	"linhas_pesquisa":""
+	"reconhecimento_premios":{
+		"2018":"Menção Honrosa - #BetheBoss - Projecting a Different Assistive (Panda) Technology, SEBRAE e Prefeitura Municipal de Itapetininga.",
+		"2017":"Melhor artigo na Categoria ?Iniciação Científica? no XXXV Simpósio Brasileiro de Telecomunicações e Processamento de Sinais (SBrT 2017), Sociedade Brasileira de Telecomunicações.",
+		"2016":"Bolsista Pesquisador - IFSP (Edital PRP 226/2016), Instituto Federal de Educação, Ciência e Tecnologia de São Paulo.",
+		"2013":"Professor Homenageado - 2a. Turma de Técnico de Manutenção e Suporte de Informática, Instituto Federal de Educação, Ciência e Tecnologia de São Paulo.",
+		"2010":"27a. Edition of the Who´s Who in the World, Marquis Who´s Who.",
+		"2010":"Aprovado em 1º Lugar no Processo Seletivo para Professor da Faculdade de Tecnologia, UNICAMP.",
+		"2010":"Aprovado em concurso público para professor, Insituto Federal de Educação, Ciência e Tecnologia de São Paulo (IFSP).",
+		"2009":"Best Student Paper Award (categoria Ph.D. Student), SBMO/IEEE MTT-S International Microwave and Optoelectronics Conference (IMOC).",
+		"2009":"Selecionado EUBRANEX para Estágio Doutoral na Technische Universität München, Erasmus Mundus External Cooperation Windows (EM ECW), sob o consórcio ,EUBRANEX.",
+		"2009":"Voto de congratulações e aplausos ao prêmio conquistado durante o IMOC 2009, Conselho Universitário (Consu) da UNICAMP.",
+		"2003":"Prêmio de Aluno destaque no curso de Tecnologia em Informática Primeiro Semestre de 2003, CESET-UNICAMP."
+	},
+	"linhas_pesquisa":[
+		"Computação Bio-Inspirada e Paralela Apliacada ao Eletromagnetismo Computacional",
+		"Computação Distribuída e Paralela",
+		"Linguagem de Programação",
+		"Inovação Tecnológica",
+		"Parceria Público-Privado",
+		"Sistema de Gestão Tecnológica na Rede Federal"
+	],
+
+	"social":{
+		"linkedin":"https://linkedin.com/in/carlos-henrique-da-silva-santos-01424215/",
+		"email": "santos.chs@gmail.com",
+		"fone":"+55 15 98135-9639",
+		"google-plus":"https://plus.google.com/114028061985018385416"
+
+	},
+	"contato":"Para entrar em contato comigo utilize uma das seguintes formas"
 }	

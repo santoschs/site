@@ -1,15 +1,21 @@
 body.error_page
 {
 	main{
+		background: white;
 		    padding: 1rem;
 	}
 	h1{
 		text-shadow: 19px 20px 30px #0000003b;
-		font-size:8rem !important;
-		font-weight: 900;
+		// font-size:8rem !important;
+		// font-weight: 900;
+	}
+	.small{
+	    font-size: .6rem;
+    	margin-top: .3rem;
 	}
 	h2{
 		text-shadow: 19px 20px 30px #0000003b;
 	}
+	color: $cor-texto;
 
 }

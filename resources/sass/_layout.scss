@@ -1,4 +1,4 @@
-
+$cor-texto:#6b6b6b;
 *{
 	&::-webkit-scrollbar {
 		width: 7px;
@@ -16,13 +16,13 @@
 		background: #2d2d2d; 
 	}
 }
-$url: "http://localhost/carlos_santos/public/";
+$url: "http://localhost/carlos_santos/public_html/";
 $gray_tone:#2d2d2d;
 $background_color:#3e3e3e;
 body{
 	@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900');
 	font-family: 'Lato', sans-serif;
-	background:$background_color;
+	background:black;
 	color: white;
 	// background:#f5f5f5;
 	
@@ -94,6 +94,7 @@ body{
 		font-weight: 500;
 	}
 	@mixin losangos{
+		display: none;
 		z-index: -1;
 		content: "";
 		width: 100vh;
@@ -111,7 +112,7 @@ body{
 		// transition: all .9s cubic-bezier(0.4, 0, 1, 1);
 		// will-change: transform; 
 		// will-change: contents;
-	}
+	}	
 	
 	@import 'header';
 	@import 'nav';
@@ -126,6 +127,99 @@ body{
 	@import 'aluno';
 	
 }
+.goog-te-combo{
+	background: white;
+	border: none;
+	padding: .6rem;
+	border-radius: 6px;
+	color: #544f4c;
+}
+#loading{
+	width: 100%;
+	height: 100%;
+	// background:#241310;
+	background:black;
+	position:fixed;
+	left: 0;
+	top:0;
+	z-index: 9999999;
+	@keyframes animate_icon{
+		0%{
+			top: -10px;	
+		}
+		50%{
+			top: 0px;		
+		}
+		100%{
+			top: -10px;	
+		}
+	}
+	padding-top: 15rem;
+	img{
+		height: 12%;
+		position: relative;
+		top: 30%;
+		animation: animate_icon infinite 2s;
+		-webkit-transition: all .25s ease;
+		-moz-transition: all .25s ease;
+		-ms-transition: all .25s ease;
+		-o-transition: all .25s ease;
+		transition: all .25s ease;
+	}
+	p{
+		padding-top:1rem;
+	}
+}
+/* external css: flickity.css */
+
+* { box-sizing: border-box; }
+
+body { font-family: sans-serif; }
+
+.carousel {
+	background: #EEE;
+}
+.flickity-viewport{
+	touch-action: pan-y;
+	background: white;
+}
+.carousel-cell {
+	width: 28%;
+	padding-top:1rem;
+	height: 420px;
+	margin-right: 10px;
+  // background: #8C8;
+  border-radius: 5px;
+
+  counter-increment: carousel-cell;
+  .img-aluno {
+  	max-width: 300px;
+  	min-width: 300px;
+  }
+  @include media-breakpoint-down(md) {
+  	width: 50%;
+  	height: 300px;
+  	.img-aluno {
+  		min-width: 150px;
+  		max-width: 152px;
+  	}
+  }
+}
+
+// .carousel-cell.is-selected {
+//   background: #ED2;
+// }
+
+/* cell number */
+// .carousel-cell:before {
+//   display: block;
+//   text-align: center;
+//   content: counter(carousel-cell);
+//   line-height: 200px;
+//   font-size: 80px;
+//   color: white;
+// }
+
 @import 'sobre'; 
 
 

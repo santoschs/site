@@ -12,13 +12,15 @@
 </head>
 <body class="error_page" style="overflow: hidden;">
 	<main>
-		<div class=" col-md-4 col-sm-10 m-auto text-center">
+		<div class=" col-md-8 col-sm-10 m-auto text-center">
 			<div class="">
-				<h1 class="mt-3">404</h1>
-				<h2 class="lead">Página não encontrada</h2>
+				<h1 class="mt-5"><i class="fas fa-exclamation-triangle"></i></h1>
+				<h1 class="mt-3">Página não encontrada</h1>
+				<p>erro 404</p>
 				<a href="{{route('home')}}" class="btn mt-3">Voltar a página incial</a>
 			</div>
-			<img src="{{URL::to('/')}}/img/logo.png" class="img-fluid mt-5" width="80">
+			<img src="{{URL::to('/')}}/img/logo.png" class="img-fluid mt-9" width="50">
+			<p class="small">www.carlos-santos.com</p>
 		</div>
 	</main>
 </body>

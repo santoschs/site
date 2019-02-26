@@ -1,3 +1,7 @@
+<div id="loading">
+	<img src="{{asset('/img/logo_white.png')}}">	 
+	<p>Carregando</p>
+</div>
 <nav class="navbar navbar-light fixed-top">
 			<div class="container-fluid">
 				<a class="navbar-brand" href="{{route('home')}}">
@@ -15,7 +19,7 @@
 							<a class="nav-link" href="{{route('home')}}">Início</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="{{route('parceiros')}}">Parceiros</a>
+							<a class="nav-link" href="{{route('colaboradores')}}">Colaboradores</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="{{route('projetos')}}">Projetos</a>
@@ -23,13 +27,13 @@
 						<li class="nav-item">
 							<a class="nav-link" href="{{route('sobre')}}">Sobre mim</a>
 						</li>	
-						<li class="nav-item">
+						{{-- <li class="nav-item">
 							<a class="nav-link" href="{{route('contato')}}">Contato</a>
-						</li>	
+						</li>	 --}}
 						<li>
 							<p>Carlos H. Silva Santos 
-								<br><a href="mailto:santos.chs@gmail.com"><i class="far fa-envelope"></i> santos.chs@gmail.com</a>
-								<br><a href="tel:+5515981359639"><i class="fas fa-mobile-alt"></i> +55 15 98135-9639</a>
+								<br><a href="mailto:{{$content_all['institucional']['social']['email']}}"><i class="far fa-envelope"></i> {{$content_all['institucional']['social']['email']}}</a>
+								<br><a href="tel:{{$content_all['institucional']['social']['fone']}}"><i class="fas fa-mobile-alt"></i>{{$content_all['institucional']['social']['email']}}</a>
 							</p>
 						</li>
 						<div id="google_translate_element"></div>

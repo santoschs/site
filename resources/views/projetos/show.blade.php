@@ -1,14 +1,8 @@
 <!doctype html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
-	{{-- <meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1"> --}}
 	<title>Carlos Santos</title>
 	@include('metainformation')
-	<!-- Fonts -->
-	{{-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,600i,700,700i,800" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="{{URL::to('/')}}/css/app.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"> --}}
 </head>
 <body class="projeto">
 	<header>
@@ -17,76 +11,104 @@
 			<img src="{{URL::to('/')}}/img/projetos/{{$content_all['projeto']['img']}}">
 		</div>
 		<div class="container">
-			<div class="losangle"></div>
-			<div class="losangle"></div>
 			<h1>{{$content_all['projeto']['nome']}}</h1>
 			<div class="col-md-10 m-auto text-center">
 				<h2>{{$content_all['projeto']['descricao_curta']}}</h2>
 			</div>
 		</div>
 	</header>
-	<main>
-		<div class="losangle"></div>
-		<div class="losangle"></div>
-		<div class="losangle"></div>
+	<main id="projeto_white">
 		@if (!empty($content_all['projeto']['resumo']))
 		<section class="resumo">
 			<div class="container">
-				<h1 class="mt-5 title">Resumo</h1>
-				<p class='lead'>
-					@php
-					echo $content_all['projeto']['resumo'];
-					@endphp
-				</p>	
+				<div class='row'>
+					<div class="col-md-8 m-auto">
+						<h1 class="mt-5 text-center"><i class="fas fa-signature"></i></h1>
+						<h1 class="text-center mb-3">Resumo</h1>
+						<p class="mt-1">
+							@php
+							echo $content_all['projeto']['resumo'];
+							@endphp
+						</p>	
+					</div>
+				</div>
+
 			</div>	
 		</section>
 		@endif
-		@if (!empty($content_all['projeto']['alunos']))
-		<section class="alunos">
+		@if (!empty($content_all['projeto']['url']))
+		<section class="mb-5 conheca">
 			<div class="container">
-				<h1 class="mt-5 title">Alunos e parceiros no projeto</h1>
-				<div class="row mt-3">
-					@foreach ($content_all['projeto']['alunos'] as $key => $content)
-					@foreach ($content_all['alunos'] as $aluno)
-					@if ($content == $aluno['id'])
-
-					<div class="aluno col-md-3">
-						<a href="{{ route('aluno', ['id' => $aluno['id']]) }}">
-							<div class="img-aluno">
-								<img src="{{URL::to('/')}}/img/alunos/{{$aluno['img']}}">
-							</div>
-							<h1>{{explode(' ', $aluno['nome'])[0] .' '. explode(' ', $aluno['nome'])[1]}}</h1>
-							<h2>{{$aluno['class']}}</h2>
-							<a class="link" href="{{ route('aluno', ['id' => $aluno['id']]) }}">Conhecer</a>
-						</a>
+				<div class='row text-center'>
+					<div class="col-md-10 m-auto content_main text-center">
+						<h1><i class="fas fa-door-open"></i></h1>
+						<h1>Conheça mais</h1>
+						<p class="text-center">Este projeto está disponível online, acesse e saiba mais sobre ele.</p>
+						<a class="mt-2 btn col-md-6 m-auto" href="{{$content_all['projeto']['url']}}" target="_blank">Ver online</a>
 					</div>
 
-					@endif
-					@endforeach
-					@endforeach
-				</div>
-				
-			</div>	
-		</section>
+				</div>	
+			</section>
+			@endif
+			@if (!empty($content_all['projeto']['colaboradores']))
+			<section class="alunos">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-10 m-auto">
+							<h1 class="mt-5 text-center"><i class="far fa-handshake"></i></h1>
+							<h1 class="text-center"> Parcerias</h1>
+							<p class="text-center">Estes são parceiros e colaboradores que contribuíram para este projeto</p>
+							<div class="row mt-3 justify-content-center">
+								@foreach ($content_all['projeto']['colaboradores'] as $key => $content)
+								@foreach ($content_all['colaboradores'] as $aluno)
+								@if ($content == $aluno['id'])
+								<div class="aluno col-4 col-md-2 text-center">
+									<a href="{{ route('aluno', ['id' => $aluno['id']]) }}">
+										<div class="img-aluno">
+											<img src="{{URL::to('/')}}/img/alunos/{{$aluno['img']}}" class="img-fluid">
+										</div>
+										<p class="nome text-center mt-1">{{explode(' ', $aluno['nome'])[0] .' '. explode(' ', $aluno['nome'])[1]}}</p>
+									</a>
+								</div>
 
-		@endif
-		@if (!empty($content_all['projeto']['more']))
-		<section class="mais my-10">
-			<div class="container">
-				@php
-					echo $content_all['projeto']['more'];
-				@endphp
-			</div>	
-		</section>
-		@endif
-		<section class="text-center my-5">
-			<a class="btn" href="{{route('projetos')}}">Ver mais projetos</a>
-		</section>
-	</main>	
-	<footer>
-		@include('layout.footer')
-	</footer>
-	
-	@include('scripts')
-</body>
-</html>
+								@endif
+								@endforeach
+								@endforeach
+							</div>
+							<p class="mt-2 text-center small">Conheça mais parceiros na página de <a href="{{route('colaboradores')}}">Colaboradores</a></p>
+						</div>
+					</div>
+				</div>	
+			</section>
+			@endif
+			@if (!empty($content_all['projeto']['more']))
+			<section class="mais my-10">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-10">
+							@php
+							echo $content_all['projeto']['more'];
+							@endphp
+						</div>
+					</div>
+				</div>	
+			</section>
+			@endif
+			<section class="text-center py-5 explore container-fluid">
+				<div class="row">
+					<div class="col-md-10 m-auto text-white">
+						<h1 class="text-white"><i class="fas fa-hiking"></i></h1>
+						<h1 class="text-white">Explore o site</h1>
+						<p class="text-center mt-1">Se interessou? Há mais projetos disponíveis para conhecer!</p>
+						<a class="btn mt-1 col-md-6" href="{{route('projetos')}}">Ver mais projetos</a>
+					</div>
+				</div>
+			</section>
+		</main>	
+		<footer>
+			@include('layout.footer')
+		</footer>
+		@include('scripts')
+		<script src="{{URL::to('/')}}/js/projetos.js"></script>
+	</body>
+	</html>

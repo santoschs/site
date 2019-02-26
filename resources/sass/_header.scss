@@ -1,6 +1,6 @@
 header
 {
-	padding-top:10rem;
+	padding-top:6rem;
 	text-align:center;
 	position:relative;
 	// background: #ffffffd4;
@@ -16,9 +16,8 @@ header
 		z-index: -1;
 		background-size: cover;
 	}
-	min-height: 100vh;
+	// min-height: 100vh;
 	background-size:cover;
-
 	.losangle{
 		@include losangos;
 		z-index: 0;
@@ -36,14 +35,21 @@ header
 	}
 	img
 	{
+		
 		&.logo, &.escrito
 		{
 			width: 10rem;
 			height: 100%;
 			margin:auto;
+			@include media-breakpoint-down(md) {
+			    width: 7rem;
+			}
 		}
 		&.escrito
 		{
+			@include media-breakpoint-down(md) {
+			    width: 17rem;
+			}
 			width: 27rem;
 			margin-top: 3rem;
 		}
